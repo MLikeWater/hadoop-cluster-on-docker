@@ -17,9 +17,9 @@ RUN ln -s /usr/lib/jvm/default/bin/java /usr/bin/java
 # Copy local compile.sh to container's path
 # install hadoop 2.7.3
 ADD hadoop-2.7.3.tar.gz /usr/local
-RUN ln -s /usr/local/hadoop-2.4.1 /usr/local/hadoop
+RUN ln -s /usr/local/hadoop-2.7.3 /usr/local/hadoop
 ENV HADOOP_HOME /usr/local/hadoop
-ENV PATH $HADOOP_HOME/bin:$PATH
+ENV PATH $HADOOP_HOME/bin:$HADOOP_HOME/sbin:$PATH
 
 # ssh without key
 RUN ssh-keygen -t rsa -f ~/.ssh/id_rsa -P '' && \
