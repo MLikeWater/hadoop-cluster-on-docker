@@ -59,7 +59,7 @@ Section B:
 The size of Hadoop cluster can be customized.
 as follows:
 Step 1. pull docker images and clone github repository
-do Step 1~3 like <<Section A>>
+do Step 1~3 like Section A
 
 Step 2. rebuild docker image
 chmod +x *
@@ -78,4 +78,4 @@ Note: you shuld use the same parameter as the Step 2
 
 Step 4. run hadoop cluster 
 
-do 5~6 like <<Section A>>
+do 5~6 like Section A
