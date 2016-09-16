@@ -1,7 +1,9 @@
 # hadoop-cluster-on-docker
 Run Hadoop Cluster within Docker Containers
 
-<<Section A>>
+Section A:
+
+
 For Example: 3 Nodes Hadoop Cluster(Default)
 
 Step 1. pull docker image
@@ -50,8 +52,10 @@ Docker	1
 Hadoop	1
 Hello	2
 
+=========================================
 
-<<Section B>>
+Section B:
+
 The size of Hadoop cluster can be customized.
 as follows:
 Step 1. pull docker images and clone github repository
