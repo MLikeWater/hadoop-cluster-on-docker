@@ -2,7 +2,7 @@ FROM ubuntu:16.04
 
 MAINTAINER jiangshouzhuang <jiangshouzhuang@163.com>
 
-# install Oracle JDK
+# Install Oracle JDK
 RUN mkdir -p /usr/lib/jvm
 ADD jdk-7u80-linux-x64.tar.gz /usr/lib/jvm/
 RUN ln -s /usr/lib/jvm/jdk1.7.0_80 /usr/lib/jvm/default
@@ -14,8 +14,7 @@ ENV CLASSPATH .:$JAVA_HOME/lib:$JRE_HOME/lib
 RUN rm -f /usr/bin/java
 RUN ln -s /usr/lib/jvm/default/bin/java /usr/bin/java
 
-# Copy local compile.sh to container's path
-# install hadoop 2.7.3
+# Install hadoop 2.7.3
 ADD hadoop-2.7.3.tar.gz /usr/local
 RUN ln -s /usr/local/hadoop-2.7.3 /usr/local/hadoop
 ENV HADOOP_HOME /usr/local/hadoop
