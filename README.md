@@ -9,7 +9,7 @@ For Example: 3 Nodes Hadoop Cluster(Default)
 
 Step 1. pull docker image
 
-sudo docker pull kjiangshouzhuang/hadoop2.7.3-cluster-on-docker:1.0
+sudo docker pull jiangshouzhuang/hadoop2.7.3-cluster-on-docker:1.0
 
 
 Step 2. clone github repository
